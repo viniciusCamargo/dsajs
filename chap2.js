@@ -105,9 +105,72 @@
 // console.log(position) // -1
 
 
-var names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer", "Raymond"];
-var name = "Raymond";
-var firstPos = names.indexOf(name); // return the position of the first occurrence or -1 if not found
-console.log("First found " + name + " at position " + firstPos);
-var lastPos = names.lastIndexOf(name); // return the position of the last occurrence or -1 if not found
-console.log("Last found " + name + " at position " + lastPos);
+// var names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer", "Raymond"];
+// var name = "Raymond";
+// var firstPos = names.indexOf(name); // return the position of the first occurrence or -1 if not found
+// console.log("First found " + name + " at position " + firstPos);
+// var lastPos = names.lastIndexOf(name); // return the position of the last occurrence or -1 if not found
+// console.log("Last found " + name + " at position " + lastPos);
+
+
+
+// // String representations of arrays
+// var names = ["David", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+// var namestr = names.join();
+// console.log(namestr); // David,Cynthia,Raymond,Clayton,Mike,Jennifer
+// namestr = names.toString();
+// console.log(namestr); // David,Cynthia,Raymond,Clayton,Mike,Jennifer
+
+
+
+// // Creating new arrays from existing arrays
+// var arr1 = [1, 2, 3, 4, 5];
+// var arr2 = [6, 7, 8, 9, 0];
+// var nArr = arr1.concat(arr2);
+// console.log(nArr); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]
+// var nArr2 = arr2.concat(arr1);
+// console.log(nArr2); // [ 6, 7, 8, 9, 0, 1, 2, 3, 4, 5 ]
+
+
+// var arr1 = ["a", "b", "c", "d", "e", "f", "g"];
+// console.log(arr1); // [ 'a', 'b', 'c', 'd', 'e', 'f', 'g' ]
+// var arr2 = arr1.splice(3,2);
+// console.log(arr2); // [ 'd', 'e' ]
+// console.log(arr1); // [ 'a', 'b', 'c', 'f', 'g' ]
+
+
+
+// // Adding elements to an array
+// var n = [1, 2, 3, 4, 5];
+// console.log(n); // [ 1, 2, 3, 4, 5 ]
+// n.push(6);
+// console.log(n); // [ 1, 2, 3, 4, 5, 6 ]
+
+
+// var nums = [2, 3, 4, 5];
+// //          0  1  3  4
+
+// // console.log(nums); // [ 2, 3, 4, 5 ]
+
+// var newnum = 1;
+// var N = nums.length; // 4
+
+// for (var i = N; i >= 0; --i) {
+//   nums[i] = nums[i-1];
+//   console.log(nums[i]);
+// }
+
+// // console.log(nums); // [ undefined, 2, 3, 4, 5 ]
+
+// nums[0] = newnum;
+
+// console.log(nums); // [ 1, 2, 3, 4, 5 ]
+
+
+var nums = [2, 3, 4, 5];
+var newnum = 1;
+nums.unshift(newnum);
+console.log(nums) // [ 1, 2, 3, 4, 5 ]
+nums = [3, 4, 5];
+nums.unshift(newnum,2); // [ 1, 2, 3, 4, 5 ]
+console.log(nums);
