@@ -48,7 +48,7 @@
 
 
 
-// shallow copy
+// // shallow copy
 // var nums = [];
 // for (var i = 0; i < 10; ++i) {
 // 	nums[i] = i+1;
@@ -67,7 +67,7 @@
 
 
 
-// deep copy
+// // deep copy
 // function copy(arr1, arr2) {
 // 	for (var i = 0; i < arr1.length; ++i) {
 // 		arr2[i] = arr1[i]; // assigning values to arr2 from arr1 *magic happens here*
@@ -91,7 +91,7 @@
 
 
 
-// Searching for value
+// // Searching for value
 // var names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer", "Raymond"];
 // var name = "Vinicius";
 // var position = names.indexOf(name); // return the position of the first occurrence or -1 if not found

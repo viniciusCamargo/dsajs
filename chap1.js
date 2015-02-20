@@ -1,4 +1,5 @@
 // // function scope
+
 // function showScope() {
 //   var scope = "oi local"; //local variable, accessible only inside the funcion
 //   scope = "oi global"; //global variable, accessible outside the function
@@ -8,11 +9,13 @@
 
 // var scope = "blabla"; //global variable, accessible outside the function
 
-// console.log(showScope()); // returns 'oi global'
-// console.log(scope); // return 'blabla'
+// console.log(showScope()); // 'oi global'
+// console.log(scope); // 'blabla'
 
 
-// recursion
+
+
+// // recursion
 
 // function factorial(number) {
 //   if (number == 1) {
@@ -24,7 +27,9 @@
 // }
 
 // console.log(factorial(5)); // prints 120
-// console.log(factorial(1)); // prints 120
+// console.log(factorial(1)); // prints 1
+
+
 
 
 // function Checking(amount) {
