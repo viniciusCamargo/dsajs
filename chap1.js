@@ -26,6 +26,7 @@
 // console.log(factorial(5)); // prints 120
 // console.log(factorial(1)); // prints 120
 
+
 // function Checking(amount) {
 //   this.balance = amount;
 //   this.deposit = deposit;
@@ -57,6 +58,7 @@
 // console.log(account.toString());
 // account.withdraw(800);
 // console.log(account.toString());
+
 
 function ContaCorrente(quantia) {
   this.total = quantia;
