@@ -167,10 +167,66 @@
 // console.log(nums); // [ 1, 2, 3, 4, 5 ]
 
 
-var nums = [2, 3, 4, 5];
-var newnum = 1;
-nums.unshift(newnum);
-console.log(nums) // [ 1, 2, 3, 4, 5 ]
-nums = [3, 4, 5];
-nums.unshift(newnum,2); // [ 1, 2, 3, 4, 5 ]
-console.log(nums);
+// var nums = [2, 3, 4, 5];
+// var newnum = 1;
+// nums.unshift(newnum);
+// console.log(nums) // [ 1, 2, 3, 4, 5 ]
+// nums = [3, 4, 5];
+// nums.unshift(newnum,2); // [ 1, 2, 3, 4, 5 ]
+// console.log(nums);
+
+
+
+// Removing elements from an array
+// var nums = [1, 2, 3, 4, 5, 9];
+// var last = nums.pop();
+// console.log(last); // 9
+// console.log(nums); // [ 1, 2, 3, 4, 5 ]
+
+// var nums = [9,1,2,3,4,5];
+// for (var i = 0; i < nums.length; ++i) {
+// 	nums[i] = nums[i+1];
+// }
+// console.log(nums); // [ 1, 2, 3, 4, 5, undefined 
+
+// var nums = [6,1,2,3,4,5];
+// var first = nums.shift();
+// console.log(first); // 6
+// console.log(nums); // [ 1, 2, 3, 4, 5 ]
+// nums.push(first);
+// console.log(nums); // [ 1, 2, 3, 4, 5, 6 ]
+
+
+// Adding or removing elements from the middle of an array
+// var nums = [1,2,3,7,8,9];
+// var newElements = [4,5,6];
+// nums.splice(3,0,newElements);
+// console.log(nums); // [ 1, 2, 3, [ 4, 5, 6 ], 7, 8, 9 ]
+
+// var nums = [1,2,3,100,200,300,400,4,5];
+// nums.splice(3,4);
+// console.log(nums); // [ 1, 2, 3, 4, 5 ]
+
+
+
+
+// Putting array elements in order
+// var nums = [1,2,3,4,5];
+// nums.reverse();
+// console.log(nums); // [ 5, 4, 3, 2, 1 ]
+
+// var names = ["David","Mike","Cynthia","Clayton","Bryan","Raymond","Cynthia"];
+// names.sort();
+// console.log(names); // [ 'Bryan','Clayton','Cynthia','Cynthia','David','Mike','Raymond' ]
+
+// var nums = [3,1,2,100,4,200];
+// nums.sort();
+// console.log(nums); // [ 1, 100, 2, 200, 3, 4 ]
+
+// function compare(num1, num2) {
+// 	return num1 - num2;
+// }
+
+// var nums = [3,1,2,100,4,200];
+// nums.sort(compare);
+// console.log(nums); 
