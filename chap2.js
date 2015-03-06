@@ -219,14 +219,79 @@
 // names.sort();
 // console.log(names); // [ 'Bryan','Clayton','Cynthia','Cynthia','David','Mike','Raymond' ]
 
-var nums = [3,1,2,100,4,200];
-nums.sort();
-console.log(nums); // [ 1, 100, 2, 200, 3, 4 ]
+// var nums = [3,1,2,100,4,200];
+// nums.sort();
+// console.log(nums); // [ 1, 100, 2, 200, 3, 4 ]
 
-function compare(num1, num2) {
-	return num1 - num2;
-}
+// function compare(num1, num2) {
+// 	return num1 - num2;
+// }
 
-var nums = [3,1,2,100,4,200];
-nums.sort(compare);
-console.log(nums); // [ 1, 2, 3, 4, 100, 200 ]
+// var nums = [3,1,2,100,4,200];
+// nums.sort(compare);
+// console.log(nums); // [ 1, 2, 3, 4, 100, 200 ]
+
+
+
+
+// Non-array-generating iterator functions
+// function square(num) {
+// 	console.log(num, num * num);
+// }
+
+// var nums = [1,2,3,4,5,6,7,8,9,10];
+// nums.forEach(square);
+
+// function isEven(num) {
+// 	return num % 2 == 0;
+// }
+
+// var nums = [2,4,6,8,10];
+// var even = nums.every(isEven);
+// if (even) {
+// 	console.log("all numbers are even");
+// }
+// else {
+// 	console.log("not all numbers are even");
+// }
+
+// function isEven(num) {
+// 	return num % 2 == 0;
+// }
+// var nums = [1,2,3,4,5,6,7,8,9,10];
+// var someEven = nums.some(isEven);
+// if (someEven) {
+// 	console.log("some numbers are even");
+// }
+// else {
+// 	console.log("no numbers are even");
+// }
+// nums = [1,3,5,7,9];
+// someEven = nums.some(isEven);
+// if (someEven) {
+// 	console.log("some numbers are even");
+// }
+// else {
+// 	console.log("no numbers are even");
+// }
+
+// function add(runningTotal, currentValue) {
+// 	return runningTotal + currentValue;
+// }
+// var nums = [1,2,3,4,5,6,7,8,9,10];
+// var sum = nums.reduce(add);
+// console.log(sum); // 55
+
+// function concat(accumulatedString, item) {
+// 	return accumulatedString + item;
+// }
+// var words = ["the ","quick ","brown ","fox"];
+// var sentence = words.reduce(concat);
+// console.log(sentence); // the quick brown fox
+
+// function concat(accumulatedString, item) {
+// 	return accumulatedString + item;
+// }
+// var words = ["the ","quick ","brown ","fox "];
+// var sentence = words.reduceRight(concat);
+// console.log(sentence);
