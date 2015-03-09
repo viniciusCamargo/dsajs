@@ -295,3 +295,17 @@
 // var words = ["the ","quick ","brown ","fox "];
 // var sentence = words.reduceRight(concat);
 // console.log(sentence);
+
+// function curve(grade) {
+//   return grade += 5;
+// }
+// var grades = [77,65,81,92,93];
+// var newgrades = grades.map(curve);
+// console.log(newgrades); // [ 82, 70, 86, 97, 98 ]
+
+function first(word) {
+  return word[0];
+}
+var words = ["for", "your", "information"];
+var acronym = words.map(first);
+console.log(acronym.join("")); // fyi
