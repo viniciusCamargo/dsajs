@@ -294,7 +294,7 @@
 // }
 // var words = ["the ","quick ","brown ","fox "];
 // var sentence = words.reduceRight(concat);
-// console.log(sentence);
+// console.log(sentence); // fox brown quick the
 
 // function curve(grade) {
 //   return grade += 5;
@@ -303,9 +303,49 @@
 // var newgrades = grades.map(curve);
 // console.log(newgrades); // [ 82, 70, 86, 97, 98 ]
 
-function first(word) {
-  return word[0];
-}
-var words = ["for", "your", "information"];
-var acronym = words.map(first);
-console.log(acronym.join("")); // fyi
+// function first(word) {
+//   return word[0];
+// }
+// var words = ["for", "your", "information"];
+// var acronym = words.map(first);
+// console.log(acronym.join("")); // fyi
+
+// function isEven(num) {
+//   return num % 2 == 0;
+// }
+// function isOdd(num) {
+//   return num % 2 != 0;
+// }
+// var nums = [];
+// for (var i = 0; i < 20; ++i) {
+//   nums[i] = i+1;
+// }
+// var evens = nums.filter(isEven);
+// console.log("Even numbers: ");
+// console.log(evens); // [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+// var odds = nums.filter(isOdd);
+// console.log("Odd numbers: "); 
+// console.log(odds); // [ 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 ]
+
+// function passing(num) {
+//   return num >= 60;
+// }
+// var grades = [];
+// for (var i = 0; i < 20; ++i) {
+//   grades[i] = Math.floor(Math.random() * 101);
+// }
+// var passGrades = grades.filter(passing);
+// console.log("All grades: "); // EXEMPLE: [ 21, 45, 88, 50, 61, 33, 56, 27, 39, 18, 59, 32, 9, 72, 49, 74, 0, 71, 32, 21 ]
+// console.log(grades);
+// console.log("Passing grades: ");
+// console.log(passGrades); // [ 88, 61, 72, 74, 71 ]
+
+// function afterc(str) {
+//   if (str.indexOf("cie") > -1) {
+//     return true;
+//   }
+//   return false;
+// }
+// var words = ["recieve", "deceive", "percieve", "deceit", "concieve", "vinicius"];
+// var misspelled = words.filter(afterc);
+// console.log(misspelled); // [ 'recieve', 'percieve', 'concieve' ]
