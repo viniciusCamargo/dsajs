@@ -48,43 +48,34 @@
 
 
 
-// // shallow copy
+// // Shallow copy
 // var nums = [];
 // for (var i = 0; i < 10; ++i) {
 // 	nums[i] = i+1;
 // }
-
 // var samenums = nums;
-
 // console.log(nums); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 // console.log(samenums); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-
 // nums[0] = 400;
-
 // console.log(nums); // [ 400, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 // console.log(samenums); // [ 400, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 
 
 
-// // deep copy
+// Deep copy
 // function copy(arr1, arr2) {
 // 	for (var i = 0; i < arr1.length; ++i) {
 // 		arr2[i] = arr1[i]; // assigning values to arr2 from arr1 *magic happens here*
 // 	}
 // }
-
 // var nums = [];
-
 // for (var i = 0; i < 10; ++i) {
 // 	nums[i] = i+1;
 // }
-
 // var samenums = [];
-
 // copy(nums, samenums);
 // nums[0] = 400;
-
 // console.log(nums[0]); // 400
 // console.log(samenums[0]); // 1
 
@@ -101,7 +92,6 @@
 // else {
 // 	console.log(name + " not found in array.");
 // }
-
 // console.log(position) // -1
 
 
@@ -149,21 +139,15 @@
 
 // var nums = [2, 3, 4, 5];
 // //          0  1  3  4
-
 // // console.log(nums); // [ 2, 3, 4, 5 ]
-
 // var newnum = 1;
 // var N = nums.length; // 4
-
 // for (var i = N; i >= 0; --i) {
 //   nums[i] = nums[i-1];
 //   console.log(nums[i]);
 // }
-
 // // console.log(nums); // [ undefined, 2, 3, 4, 5 ]
-
 // nums[0] = newnum;
-
 // console.log(nums); // [ 1, 2, 3, 4, 5 ]
 
 
@@ -238,14 +222,12 @@
 // function square(num) {
 // 	console.log(num, num * num);
 // }
-
 // var nums = [1,2,3,4,5,6,7,8,9,10];
 // nums.forEach(square);
 
 // function isEven(num) {
 // 	return num % 2 == 0;
 // }
-
 // var nums = [2,4,6,8,10];
 // var even = nums.every(isEven);
 // if (even) {
@@ -296,6 +278,10 @@
 // var sentence = words.reduceRight(concat);
 // console.log(sentence); // fox brown quick the
 
+
+
+
+// Iterator functions that return a new array
 // function curve(grade) {
 //   return grade += 5;
 // }
@@ -349,3 +335,13 @@
 // var words = ["recieve", "deceive", "percieve", "deceit", "concieve", "vinicius"];
 // var misspelled = words.filter(afterc);
 // console.log(misspelled); // [ 'recieve', 'percieve', 'concieve' ]
+
+
+
+
+// Two-dimensional and multimentional arrays
+var twod = [];
+var rows = 5;
+for (var i = 0; i < rows; ++i) {
+	twod[i] = [];
+}
