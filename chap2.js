@@ -410,27 +410,118 @@
 
 
 // Arrays of objects
-function Point(x, y) {
-  this.x = x;
-  this.y = y;
-}
-function displayPts(arr) {
-  for (var i = 0; i < arr.length; ++i) {
-    console.log(arr[i].x + ", " + arr[i].y);
-  }
-}
-var p1 = new Point(1,2);
-var p2 = new Point(3,5);
-var p3 = new Point(2,8);
-var p4 = new Point(4,4);
-var points = [p1, p2, p3, p4];
-for (var i = 0; i < points.length; ++i) {
-  console.log("Point " + parseInt(i + 1) + ": " + points[i].x + ", " + points[i].y);
-}
-var p5 = new Point(12,-3);
-points.push(p5); // add item to the end of array
-console.log("After push: ");
-displayPts(points);
-points.shift(); // delete first item of array
-console.log("After shift: ");
-displayPts(points);
+// function Point(x, y) {
+//   this.x = x;
+//   this.y = y;
+// }
+// function displayPts(arr) {
+//   for (var i = 0; i < arr.length; ++i) {
+//     console.log(arr[i].x + ", " + arr[i].y);
+//   }
+// }
+// var p1 = new Point(1,2);
+// var p2 = new Point(3,5);
+// var p3 = new Point(2,8);
+// var p4 = new Point(4,4);
+// var points = [p1, p2, p3, p4];
+// for (var i = 0; i < points.length; ++i) {
+//   console.log("Point " + parseInt(i + 1) + ": " + points[i].x + ", " + points[i].y);
+// }
+// var p5 = new Point(12,-3);
+// points.push(p5); // add item to the end of array
+// console.log("After push: ");
+// displayPts(points);
+// points.shift(); // delete first item of array
+// console.log("After shift: ");
+// displayPts(points);
+
+
+
+
+// Arrays in objects
+// function weekTemps() {
+// 	this.dataStore = [];
+// 	this.add = add;
+// 	this.average = average;
+// }
+
+// function add(temp) {
+// 	this.dataStore.push(temp);
+// }
+
+// function average() {
+// 	var total = 0;
+// 	for (var i = 0; i < this.dataStore.length; ++i) {
+// 		total += this.dataStore[i];
+// 	}
+// 	return total / this.dataStore.length;
+// }
+
+// var thisWeek = new weekTemps();
+// thisWeek.add(52);
+// thisWeek.add(55);
+// thisWeek.add(61);
+// thisWeek.add(65);
+// thisWeek.add(55);
+// thisWeek.add(50);
+// thisWeek.add(52);
+// thisWeek.add(49);
+// console.log(thisWeek.average());
+
+
+
+
+// Exercises
+// 1. Create a grades object that stores a set of student grades in an object. Provide a function for adding a grade and a function for displaying the student’s grade average.
+
+// function studentsGrades() {
+// 	this.grades = [];
+// 	this.addGrade = addGrade;
+// 	this.gradesAverage = gradesAverage;
+// }
+
+// function addGrade(grade) {
+// 	this.grades.push(grade);
+// }
+
+// function gradesAverage() {
+// 	var total = 0;
+// 	for (var i = 0; i < this.grades.length; ++i) {
+// 		total += this.grades[i];
+// 	}
+// 	return total / this.grades.length;
+// }
+
+// var thisExam = new studentsGrades();
+// thisExam.addGrade(8);
+// thisExam.addGrade(6.5);
+// thisExam.addGrade(7);
+// thisExam.addGrade(10);
+// thisExam.addGrade(9.5);
+// thisExam.addGrade(4);
+// thisExam.addGrade(6.5);
+// thisExam.addGrade(8);
+// console.log(thisExam.gradesAverage());
+
+
+
+
+// To sum the content of array
+// var foo = [];
+// for (var i = 0; i < 10; ++i) {
+// 	foo[i] = i + 1;
+// }
+
+// var total = 0;
+// for (var i = 0; i < foo.length; ++i) {
+// 	total += foo[i];
+// }
+// console.log(total);
+// I could create this with a function and the add method.
+
+
+
+
+// 2. Store a set of words in an array and display the contents both forward and backward.
+var sentence = "Store a set of words";
+var wordsForward = sentence.split(" ");
