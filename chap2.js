@@ -523,5 +523,10 @@
 
 
 // 2. Store a set of words in an array and display the contents both forward and backward.
-var sentence = "Store a set of words";
+var sentence = "Store a set of words in an array";
 var wordsForward = sentence.split(" ");
+
+console.log(wordsForward); // [ 'Store', 'a', 'set', 'of', 'words', 'in', 'an', 'array' ]
+
+var wordsBackward = wordsForward.reverse();
+console.log(wordsBackward); // [ 'array', 'an', 'in', 'words', 'of', 'set', 'a', 'Store' ]
