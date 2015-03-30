@@ -523,10 +523,41 @@
 
 
 // 2. Store a set of words in an array and display the contents both forward and backward.
-var sentence = "Store a set of words in an array";
-var wordsForward = sentence.split(" ");
+// var sentence = "Store a set of words in an array";
+// var wordsForward = sentence.split(" ");
 
-console.log(wordsForward); // [ 'Store', 'a', 'set', 'of', 'words', 'in', 'an', 'array' ]
+// console.log(wordsForward); // [ 'Store', 'a', 'set', 'of', 'words', 'in', 'an', 'array' ]
 
-var wordsBackward = wordsForward.reverse();
-console.log(wordsBackward); // [ 'array', 'an', 'in', 'words', 'of', 'set', 'a', 'Store' ]
+// var wordsBackward = wordsForward.reverse();
+// console.log(wordsBackward); // [ 'array', 'an', 'in', 'words', 'of', 'set', 'a', 'Store' ]
+
+// 3. Modify the weeklyTemps object in the chapter so that it stores a month’s worth of data using a two-dimensional array. Create functions to display the monthly average, a specific week’s average, and all the weeks’ averages.
+
+
+// 4. Create an object that stores individual letters in an array and has a function for displaying the letters as a single word.
+
+function individualLetters() {
+	this.letters = [];
+	this.addLetter = addLetter;
+	this.formWord = formWord;
+}
+
+function addLetter(letter) {
+	this.letters.push(letter);
+}
+
+function formWord() {
+	var word = this.letters.join('');
+	return word;
+}
+
+var myWord = new individualLetters();
+myWord.addLetter("v");
+myWord.addLetter("i");
+myWord.addLetter("n");
+myWord.addLetter("i");
+myWord.addLetter("c");
+myWord.addLetter("i");
+myWord.addLetter("u");
+myWord.addLetter("s");
+console.log(myWord.formWord());
