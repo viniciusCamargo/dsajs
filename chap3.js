@@ -57,12 +57,12 @@ function toString() {
 }
 
 // test the implementation so far
-var names = new List();
-names.append("Cynthia");
-names.append("Raymond");
-names.append("Barbara");
+// var names = new List();
+// names.append("Cynthia");
+// names.append("Raymond");
+// names.append("Barbara");
 // console.log(names.toString()); // [ 'Cynthia', 'Raymond', 'Barbara' ]
-names.remove("Raymond");
+// names.remove("Raymond");
 // console.log(names.toString()); // [ 'Cynthia', 'Barbara' ]
 
 // Insert: inserting an element into a list
@@ -125,3 +125,22 @@ function moveTo(position) {
 function getElement() {
 	return this.dataStore[this.pos];
 }
+
+var names = new List();
+names.append("Clayton");
+names.append("Raymond");
+names.append("Cynthia");
+names.append("Jennifer");
+names.append("Bryan");
+names.append("Danny");
+
+names.front();
+console.log(names.getElement()); // Clayton
+
+names.next();
+console.log(names.getElement()); // Raymond
+
+names.next();
+names.next();
+names.prev();
+console.log(names.getElement());
