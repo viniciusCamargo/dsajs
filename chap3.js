@@ -17,7 +17,7 @@ function List() {
 	// this.currPos = currPos;
 	// this.moveTo = moveTo;
 	// this.getElement = getElement;
-	// this.contains = contains;
+	this.contains = contains;
 }
 
 // Append: adding an element to a list
@@ -81,4 +81,14 @@ function clear() {
 	delete this.dataStore;
 	this.dataStore = 0;
 	this.listSize = this.pos = 0;
+}
+
+// Contains: determining if a given value is in a list
+function contains(element) {
+	for (var i = 0; i < this.dataStore.length; ++i) {
+		if (this.dataStore[i] == element) {
+			return true;
+		}
+	}
+	return false;
 }
