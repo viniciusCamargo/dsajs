@@ -34,3 +34,14 @@ function find(element) {
 	}
 	return -1;
 }
+
+// Find: finding an element in a list
+function remove(element) {
+	var foundAt = this.find(element);
+	if (foundAt > -1) {
+		this.dataStore.splice(foundAt,1);
+		--this.listSize;
+		return true;
+	}
+	return false;
+}
