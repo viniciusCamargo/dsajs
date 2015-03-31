@@ -50,3 +50,8 @@ function remove(element) {
 function length() {
 	return this.listSize;
 }
+
+// toString: retrieving a list’s elements
+function toString() {
+	return this.dataStore;
+}
