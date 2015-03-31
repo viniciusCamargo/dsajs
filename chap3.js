@@ -3,7 +3,7 @@ function List() {
 	this.listSize = 0;
 	this.pos = 0;
 	this.dataStore = [];
-	// this.clear = clear;
+	this.clear = clear;
 	this.find = find;
 	this.toString = toString;
 	this.insert = insert;
@@ -74,4 +74,11 @@ function insert(element, after) {
 		return true;
 	}
 	return false;
+}
+
+// Clear: removing all elements from a list
+function clear() {
+	delete this.dataStore;
+	this.dataStore = 0;
+	this.listSize = this.pos = 0;
 }
