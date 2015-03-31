@@ -9,14 +9,14 @@ function List() {
 	this.insert = insert;
 	this.append = append;
 	this.remove = remove;
-	// this.front = front;
-	// this.end = end;
-	// this.prev = prev;
-	// this.next = next;
+	this.front = front;
+	this.end = end;
+	this.prev = prev;
+	this.next = next;
 	this.length = length;
-	// this.currPos = currPos;
-	// this.moveTo = moveTo;
-	// this.getElement = getElement;
+	this.currPos = currPos;
+	this.moveTo = moveTo;
+	this.getElement = getElement;
 	this.contains = contains;
 }
 
@@ -92,3 +92,5 @@ function contains(element) {
 	}
 	return false;
 }
+
+
