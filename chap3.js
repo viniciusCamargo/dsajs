@@ -19,3 +19,9 @@ function List() {
 	this.getElement = getElement;
 	this.contains = contains;
 }
+
+// Append: adding an element to a list
+function append(element) {
+	this.dataStore[this.listSize++] = element;
+}
+
