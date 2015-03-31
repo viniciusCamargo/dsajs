@@ -56,3 +56,9 @@ function toString() {
 	return this.dataStore;
 }
 
+// test the implementation so far
+var names = new List();
+names.append("Cynthia");
+names.append("Raymond");
+names.append("Barbara");
+console.log(names.toString());
