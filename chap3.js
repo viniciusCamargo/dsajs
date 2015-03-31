@@ -61,4 +61,7 @@ var names = new List();
 names.append("Cynthia");
 names.append("Raymond");
 names.append("Barbara");
-console.log(names.toString());
+// console.log(names.toString()); // [ 'Cynthia', 'Raymond', 'Barbara' ]
+names.remove("Raymond");
+// console.log(names.toString()); // [ 'Cynthia', 'Barbara' ]
+
