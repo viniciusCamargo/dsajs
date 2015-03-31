@@ -45,3 +45,8 @@ function remove(element) {
 	}
 	return false;
 }
+
+// Length: determining the number of elements in a list
+function length() {
+	return this.listSize;
+}
